@@ -3,44 +3,455 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Curriculum vitae of Patrick Cruz.">
-    <title>Patrick Cruz | Curriculum Vitae</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <title>Patrick Cruz | Portfolio</title>
 </head>
+
 <body>
-    <header class="site-header">
-        <nav class="nav container" aria-label="Main navigation">
-            <a class="brand" href="index.html" aria-label="CV directory">GE<span>.</span></a>
-            <a class="download-link" href="index.html">← CV directory</a>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <a href="#home" class="logo">Patrick</a>
+
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contacts</a>
         </nav>
     </header>
-    <main class="container">
-        <section class="hero" aria-labelledby="cv-name">
-            <div class="hero-copy">
-                <p class="eyebrow">Curriculum vitae <span class="rule"></span> Add year</p>
-                <h1 id="cv-name">Patrick<br><em>Cruz</em></h1>
-                <p class="hero-description">Add a short professional introduction here.</p>
+
+
+    <!-- ================= HOME ================= -->
+    <section class="home" id="home">
+
+        <div class="home-pfp">
+            <img src="Images/filler.png" alt="Picture of Patrick Cruz">
+        </div>
+
+        <div class="home-content">
+
+            <p class="intro">Hello, I'm</p>
+
+            <h1>Patrick <span>Cruz</span></h1>
+
+            <h3>Cybersecurity <span>Student</span></h3>
+
+            <p>
+                I am a fourth-year Information Technology student with a strong
+                interest in cybersecurity, backend development, web development,
+                and secure application design.
+            </p>
+
+            <p>
+                I enjoy building practical systems, learning how technologies
+                work behind the scenes, and improving the security and
+                reliability of applications.
+            </p>
+
+            <div class="social-icns">
+
+                <a href="https://www.linkedin.com/in/cruz-patrick0921/"
+                   target="_blank"
+                   aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="https://github.com/Aerythox"
+                   target="_blank"
+                   aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="#contact"
+                   aria-label="Contact">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
             </div>
-            <div class="hero-aside">
-                <div class="portrait" aria-label="Portrait placeholder"><span>PC</span></div>
-                <p class="availability"><span class="status-dot"></span> Add availability</p>
+
+            <a href="#contact" class="btn">Contact Me</a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section" id="skills">
+
+        <div class="section-title">
+            <p>What I Work With</p>
+            <h2>My <span>Skills</span></h2>
+        </div>
+
+        <div class="skills-container">
+
+            <!-- Programming -->
+            <div class="skill-card">
+
+                <i class="fa-solid fa-code"></i>
+
+                <h3>Programming</h3>
+
+                <p>
+                    Comfortable with programming fundamentals and
+                    object-oriented programming concepts.
+                </p>
+
+                <div class="skill-list">
+                    <span>Python</span>
+                    <span>Java</span>
+                    <span>Kotlin</span>
+                    <span>JavaScript</span>
+                    <span>PHP</span>
+                </div>
+
             </div>
-        </section>
-        <section class="section split-section" id="profile">
-            <div class="section-heading"><p class="section-number">01</p><h2>Profile</h2></div>
-            <div class="section-content"><p class="lead">Write a short profile summary here.</p><p>Describe experience, interests, and professional goals.</p></div>
-        </section>
-        <section class="section split-section" id="experience">
-            <div class="section-heading"><p class="section-number">02</p><h2>Experience</h2></div>
-            <div class="section-content timeline">
-                <article class="timeline-item"><div class="timeline-date">Year — Present</div><div><h3>Job title <span class="company">@ Company</span></h3><p>Add responsibilities and achievements here.</p><div class="tags"><span>Skill</span><span>Tool</span></div></div></article>
+
+
+            <!-- Web Development -->
+            <div class="skill-card">
+
+                <i class="fa-solid fa-globe"></i>
+
+                <h3>Web Development</h3>
+
+                <p>
+                    Experience building web applications and working
+                    with both frontend and backend technologies.
+                </p>
+
+                <div class="skill-list">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Node.js</span>
+                    <span>Express</span>
+                </div>
+
             </div>
-        </section>
-        <section class="section split-section">
-            <div class="section-heading"><p class="section-number">03</p><h2>Education &amp; skills</h2></div>
-            <div class="section-content"><p class="lead">Add education, certifications, skills, and projects here.</p></div>
-        </section>
-    </main>
-    <footer class="container footer"><span>© 2026 Patrick Cruz</span><a href="index.html">Back to CV directory ↑</a></footer>
+
+
+            <!-- Cybersecurity -->
+            <div class="skill-card">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <h3>Cybersecurity</h3>
+
+                <p>
+                    Interested in application security, authentication,
+                    vulnerability assessment, and secure development.
+                </p>
+
+                <div class="skill-list">
+                    <span>OWASP</span>
+                    <span>OpenVAS</span>
+                    <span>JWT</span>
+                    <span>Authentication</span>
+                    <span>Linux</span>
+                </div>
+
+            </div>
+
+
+            <!-- Databases -->
+            <div class="skill-card">
+
+                <i class="fa-solid fa-database"></i>
+
+                <h3>Databases</h3>
+
+                <p>
+                    Experience designing and connecting applications
+                    with relational and NoSQL databases.
+                </p>
+
+                <div class="skill-list">
+                    <span>MySQL</span>
+                    <span>MongoDB</span>
+                    <span>MongoDB Atlas</span>
+                    <span>SQL</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= EDUCATION ================= -->
+    <section class="section education-section" id="education">
+
+        <div class="section-title">
+            <p>My Academic Background</p>
+            <h2><span>Education</span></h2>
+        </div>
+
+        <div class="education-container">
+
+            <div class="education-card">
+
+                <div class="education-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+
+                <div class="education-content">
+
+                    <span class="education-date">2022 - Present</span>
+
+                    <h3>Bachelor of Science in Information Technology</h3>
+
+                    <h4>Major / Specialization: Cybersecurity</h4>
+
+                    <p>
+                        Currently completing my degree in Information Technology
+                        with a focus on cybersecurity, software development,
+                        databases, networking, and information assurance.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="education-card">
+
+                <div class="education-icon">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+
+                <div class="education-content">
+
+                    <span class="education-date">Academic Projects</span>
+
+                    <h3>Hands-on IT Development</h3>
+
+                    <p>
+                        Developed academic projects involving web development,
+                        mobile applications, databases, backend systems,
+                        cybersecurity, and AI-assisted applications.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section" id="projects">
+
+        <div class="section-title">
+            <p>Things I've Worked On</p>
+            <h2>My <span>Projects</span></h2>
+        </div>
+
+        <div class="projects-container">
+
+            <!-- HabiTrash -->
+            <div class="project-card">
+
+                <div class="project-icon">
+                    <i class="fa-solid fa-recycle"></i>
+                </div>
+
+                <div class="project-content">
+
+                    <h3>HabiTrash</h3>
+
+                    <p>
+                        A smart waste management system designed to assist
+                        waste classification and collection monitoring.
+                        The project combines AI, IoT, backend development,
+                        and cybersecurity concepts.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>MongoDB</span>
+                        <span>Python</span>
+                        <span>AI</span>
+                        <span>IoT</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TaskConnect -->
+            <div class="project-card">
+
+                <div class="project-icon">
+                    <i class="fa-solid fa-handshake"></i>
+                </div>
+
+                <div class="project-content">
+
+                    <h3>TaskConnect</h3>
+
+                    <p>
+                        A mobile-based task hiring application created
+                        as an academic project. The system connects users
+                        who need small tasks completed with people willing
+                        to perform them.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Android</span>
+                        <span>Kotlin</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>REST API</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Cybersecurity -->
+            <div class="project-card">
+
+                <div class="project-icon">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+
+                <div class="project-content">
+
+                    <h3>Cybersecurity Projects</h3>
+
+                    <p>
+                        Academic exercises involving vulnerability assessment,
+                        security testing, authentication, information assurance,
+                        and secure application development.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Kali Linux</span>
+                        <span>OpenVAS</span>
+                        <span>OWASP</span>
+                        <span>Security Testing</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section contact-section" id="contact">
+
+        <div class="section-title">
+            <p>Let's Connect</p>
+            <h2>Contact <span>Me</span></h2>
+        </div>
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <h3>Get In Touch</h3>
+
+                <p>
+                    Whether you would like to discuss a project,
+                    collaboration, internship opportunity, or simply
+                    connect, feel free to reach out.
+                </p>
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>your-email@example.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-brands fa-github"></i>
+                    <div>
+                        <h4>GitHub</h4>
+                        <p>github.com/Aerythox</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <div>
+                        <h4>LinkedIn</h4>
+                        <p>linkedin.com/in/cruz-patrick0921</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <i class="fa-solid fa-terminal"></i>
+
+                <h3>Interested in working together?</h3>
+
+                <p>
+                    I'm always interested in learning, building,
+                    and working on new technology projects.
+                </p>
+
+                <a href="mailto:your-email@example.com" class="btn">
+                    Send Me an Email
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <p>
+            © 2026 Patrick Cruz. All Rights Reserved.
+        </p>
+
+        <div class="footer-socials">
+
+            <a href="https://github.com/Aerythox" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/cruz-patrick0921/"
+               target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+        </div>
+
+    </footer>
+
 </body>
 </html>
