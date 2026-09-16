@@ -42,6 +42,7 @@ h1 { font-size: clamp(4.5rem, 11vw, 9.4rem); font-weight: 800; letter-spacing: -
 .hero-aside { align-items: end; display: flex; flex-direction: column; gap: 20px; }
 .portrait { align-items: center; background: var(--accent); display: flex; height: 210px; justify-content: center; width: 210px; }
 .portrait span { color: var(--dark); font-size: 58px; font-weight: 800; letter-spacing: -.12em; }
+.portrait img { height: 100%; object-fit: cover; width: 100%; }
 .availability { color: var(--muted); font: 500 10px var(--mono); }
 .status-dot { background: #739000; border-radius: 50%; display: inline-block; height: 7px; margin-right: 6px; width: 7px; }
 .location { display: flex; flex-direction: column; text-align: right; }
