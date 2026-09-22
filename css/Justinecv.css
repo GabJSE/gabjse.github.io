@@ -49,14 +49,6 @@ a {
 }
 
 .cv-page,
-.portfolio-page {
-  width: 210mm;
-  min-height: 297mm;
-  margin: 0 auto 22px;
-  background: var(--paper);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, .12);
-}
-
 .cv-page {
   display: grid;
   grid-template-columns: 57mm 1fr;
@@ -209,102 +201,6 @@ a {
   margin-top: 8px;
 }
 
-.portfolio-page {
-  overflow: hidden;
-}
-
-.portfolio-header {
-  background: var(--sidebar);
-  color: #fff;
-  min-height: 35mm;
-  padding: 8mm 10mm;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.portfolio-header h1 {
-  margin: 0;
-  font-size: 28px;
-  letter-spacing: 3px;
-}
-
-.portfolio-header p {
-  margin: 3px 0 0;
-  font-size: 12px;
-  letter-spacing: 3px;
-  font-weight: 700;
-}
-
-.portfolio-body {
-  padding: 9mm 11mm 11mm;
-}
-
-.portfolio-project {
-  display: grid;
-  grid-template-columns: 49mm 1fr;
-  gap: 8mm;
-  align-items: center;
-  padding: 7mm 0;
-  border-bottom: 3px solid var(--line);
-}
-
-.portfolio-project:last-child {
-  border-bottom: 0;
-}
-
-.portfolio-copy h2 {
-  margin: 0 0 4px;
-  font-size: 11px;
-  line-height: 1.18;
-  letter-spacing: 2px;
-}
-
-.portfolio-copy p {
-  font-size: 8.5px;
-  margin: 3px 0;
-}
-
-.shots {
-  display: grid;
-  gap: 5mm;
-}
-
-.shots.three {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.shot {
-  margin: 0;
-  min-height: 51mm;
-  border: 1px solid #d7dbd8;
-  background: #f2f4f3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  position: relative;
-}
-
-.shot img {
-  width: 100%;
-  height: 51mm;
-  object-fit: cover;
-  display: block;
-}
-
-.shot figcaption {
-  display: none;
-  text-align: center;
-  padding: 8px;
-  color: #7b817d;
-  font-size: 8px;
-}
-
-.shot.missing figcaption {
-  display: block;
-}
-
 @media (max-width: 850px) {
   body {
     background: #fff;
@@ -314,8 +210,7 @@ a {
     width: calc(100% - 24px);
   }
 
-  .cv-page,
-  .portfolio-page {
+  .cv-page {
     width: 100%;
     min-height: auto;
     margin: 0;
@@ -327,30 +222,12 @@ a {
   }
 
   .sidebar,
-  .content,
-  .portfolio-body {
+  .content {
     padding: 28px 22px;
-  }
-
-  .portfolio-project {
-    grid-template-columns: 1fr;
-  }
-
-  .shots.three {
-    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 560px) {
-  .shots.three {
-    grid-template-columns: 1fr;
-  }
-
-  .shot,
-  .shot img {
-    min-height: 220px;
-    height: 220px;
-  }
 }
 
 @page {
@@ -367,14 +244,11 @@ a {
     display: none !important;
   }
 
-  .cv-page,
-  .portfolio-page {
+  .cv-page {
     width: 210mm;
     min-height: 297mm;
     margin: 0;
     box-shadow: none;
-    break-after: page;
-    page-break-after: always;
   }
 
   .portfolio-page {
@@ -384,13 +258,5 @@ a {
 
   a {
     text-decoration: none;
-  }
-
-  .shot.missing {
-    display: none;
-  }
-
-  .shots:has(.shot.missing) {
-    grid-template-columns: repeat(3, 1fr);
   }
 }
