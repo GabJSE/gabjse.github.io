@@ -3,86 +3,301 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Paul Justine Rimando — BS Information Technology student at PHINMA University of Pangasinan. Academic projects, web development, and things I'm learning.">
-  <meta name="color-scheme" content="light dark">
-  <title>Paul Justine Rimando · Student Portfolio</title>
+  <meta name="description" content="Paul Justine T. Rimando — Information Technology student CV and project portfolio.">
+  <title>Paul Justine T. Rimando | CV</title>
   <link rel="stylesheet" href="css/Justinecv.css">
-  <script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <nav class="container navigation" aria-label="Main navigation">
-      <a class="wordmark" href="#home" aria-label="Paul Justine, home">pjmr<span>.</span></a>
-      <div class="nav-links">
-        <a href="#about">About</a><a href="#projects">Projects</a><a href="#learning">Learning</a>
+  <div class="toolbar no-print">
+    <a href="index.html">← Back</a>
+    <button onclick="window.print()">Print / Save as PDF</button>
+  </div>
+
+  <!-- PAGE 1: CV -->
+  <main class="cv-page">
+    <aside class="sidebar">
+      <div class="identity">
+        <h1>PAUL JUSTINE<br>T. RIMANDO</h1>
+        <p class="role">INFORMATION<br>TECHNOLOGY<br>STUDENT</p>
       </div>
-      <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false" hidden><span aria-hidden="true">◐</span><span class="theme-label">Dark</span></button>
-    </nav>
-  </header>
 
-  <main id="main" class="container">
-    <section id="home" class="hero" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> BS Information Technology Student</p>
-        <h1 id="hero-title">Hi, I’m Paul.<br>Learning by<br><span>building things.</span></h1>
-        <p class="hero-description">I’m Paul Justine Rimando, an IT student at PHINMA University of Pangasinan. I explore web development, secure systems, and practical solutions through academic projects.</p>
-        <div class="actions"><a class="button primary" href="#projects">Explore my projects <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/pjmr" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
-      </div>
-      <aside class="student-card" aria-label="Student profile">
-        <div class="card-top"><span>THE STUDENT FILE</span><span aria-hidden="true">↗</span></div>
-        <div class="monogram" aria-hidden="true">PJ<span>.</span></div>
-        <p class="profile-name">Paul Justine Rimando</p>
-        <p class="profile-caption">Curious mind. Work in progress.</p>
-        <dl class="profile-facts"><div><dt>Studying</dt><dd>Information Technology</dd></div><div><dt>University</dt><dd>PHINMA UPang</dd></div><div><dt>Based in</dt><dd>Philippines</dd></div></dl>
-        <p class="card-foot"><span class="status-dot" aria-hidden="true"></span> Currently exploring &amp; creating</p>
-      </aside>
-    </section>
+      <section class="side-section">
+        <h2>CONTACT INFORMATION</h2>
+        <ul class="contact-list">
+          <li><span>☎</span><a href="tel:+639084505932">+63 908 450 5932</a></li>
+          <li><span>✉</span><a href="mailto:pjmr.work@gmail.com">pjmr.work@gmail.com</a></li>
+          <li><span>in</span><a href="https://www.linkedin.com/in/paul-justine-rimando" target="_blank" rel="noopener">linkedin.com/in/paul-justine-rimando</a></li>
+        </ul>
+      </section>
 
-    <section id="about" class="section about-section" aria-labelledby="about-title">
-      <div class="section-heading"><p class="eyebrow">01 / A little about me</p><h2 id="about-title">From an idea<br>to something useful.</h2></div>
-      <div class="about-content"><p>I’m pursuing a Bachelor of Science in Information Technology at PHINMA University of Pangasinan, under the College of Information Technology Education.</p><p>My studies involve building applications, working with databases, and understanding how systems communicate. I’m especially interested in how thoughtful design and security can make everyday tools more reliable.</p><p>This portfolio is also my testing ground: a small space to practice, experiment, and document what I’m learning.</p><div class="tags" aria-label="Areas of interest"><span>Web development</span><span>System security</span><span>UI &amp; UX</span><span>Database design</span></div></div>
-    </section>
+      <section class="side-section">
+        <h2>PORTFOLIO</h2>
+        <ul class="contact-list">
+          <li><span>⌂</span><a href="index.html">GitHub Pages Portfolio</a></li>
+          <li><span>GH</span><a href="https://github.com/Jecchisauce" target="_blank" rel="noopener">github.com/Jecchisauce</a></li>
+        </ul>
+      </section>
 
-    <section id="projects" class="section" aria-labelledby="projects-title">
-      <div class="section-heading projects-heading"><div><p class="eyebrow">02 / Selected academic work</p><h2 id="projects-title">Things I’ve worked on.</h2></div><p>Classroom ideas, brought into practice.</p></div>
-      <div class="filters" role="group" aria-label="Filter projects" hidden><button type="button" data-filter="all" aria-pressed="true">All projects</button><button type="button" data-filter="web" aria-pressed="false">Web systems</button><button type="button" data-filter="application" aria-pressed="false">Applications</button></div>
-      <p id="filter-status" class="sr-only" role="status" aria-live="polite"></p>
-      <div class="project-grid">
-        <article class="project-card featured" data-category="web">
-          <div class="project-top"><span class="project-number">01</span><span class="project-type">Capstone project</span></div>
-          <h3>BlockCert Secure</h3><p>A blockchain-based document verification and certificate management system, developed as a capstone project.</p>
-          <div class="tags"><span>React</span><span>Node.js</span><span>MongoDB</span><span>Blockchain</span></div>
-          <details><summary>Explore project <span aria-hidden="true">+</span></summary><div class="project-details"><h4>The idea</h4><p>Make academic certificate verification easier and help detect changes to documents using file hashes and blockchain records.</p><h4>What I’m exploring</h4><p>Document uploads, role-based access, verification workflows, audit trails, and AI-assisted document review. This is an academic prototype, not a public verification service.</p></div></details>
+      <section class="side-section">
+        <h2>TECHNICAL SKILLS</h2>
+        <ul>
+          <li>Web Development</li>
+          <li>Software Development</li>
+          <li>UI / UX Design</li>
+          <li>Database Management</li>
+          <li>Networking / Troubleshooting</li>
+          <li>System &amp; Application Security</li>
+        </ul>
+      </section>
+
+      <section class="side-section">
+        <h2>PROGRAMMING<br>LANGUAGES, TOOLS &amp;<br>FRAMEWORKS</h2>
+        <ul>
+          <li>Java</li>
+          <li>Python</li>
+          <li>HTML / CSS / JavaScript</li>
+          <li>React / Vite</li>
+          <li>Node.js / Express</li>
+          <li>MongoDB / MySQL</li>
+          <li>Git / GitHub</li>
+          <li>Figma</li>
+        </ul>
+      </section>
+
+      <section class="side-section">
+        <h2>CORE WORK SKILLS</h2>
+        <ul>
+          <li>Problem Solving</li>
+          <li>Computational Thinking</li>
+          <li>Teamwork &amp; Collaboration</li>
+          <li>Communication</li>
+          <li>Time Management</li>
+          <li>Adaptability</li>
+        </ul>
+      </section>
+    </aside>
+
+    <section class="content">
+      <section class="main-section profile">
+        <h2>PROFILE SUMMARY</h2>
+        <p>
+          Bachelor of Science in Information Technology student at PHINMA University of Pangasinan
+          with hands-on experience developing academic software and web-based systems. Familiar with
+          frontend and backend development using React, Node.js, Express, MongoDB, MySQL, Java, and
+          Python, with additional experience in UI/UX, networking, and secure application development.
+          Interested in building practical, reliable, and secure information systems while continuously
+          strengthening software engineering and cybersecurity skills.
+        </p>
+      </section>
+
+      <section class="main-section">
+        <h2>EDUCATION</h2>
+        <article class="entry">
+          <h3>BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY</h3>
+          <p class="meta"><strong>PHINMA University of Pangasinan</strong> | 2022 – Present</p>
+          <p>College of Information Technology Education</p>
         </article>
-        <article class="project-card" data-category="web">
-          <div class="project-top"><span class="project-number">02</span><span class="project-type">Web system</span></div>
-          <h3>OpenPC UnitOne</h3><p>A web-based computer monitoring and management system for organizing laboratory units and maintenance reports.</p>
-          <div class="tags"><span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span></div>
-          <details><summary>Explore project <span aria-hidden="true">+</span></summary><div class="project-details"><h4>The idea</h4><p>Bring computer inventory, unit status, and technical reporting into one organized system.</p><h4>Learning through the project</h4><p>Role-based dashboards for administrators, auditors, and technicians; authentication; API integration; and managing application data.</p></div></details>
+        <article class="entry compact">
+          <h3>SENIOR TESORO ACADEMY</h3>
+          <p class="meta">Junior High School &amp; Senior High School | 2017 – 2022</p>
         </article>
-        <article class="project-card" data-category="application">
-          <div class="project-top"><span class="project-number">03</span><span class="project-type">Scheduling application</span></div>
-          <h3>Vidal Queue-Teeth</h3><p>A dental appointment scheduling application focused on making appointment organization more straightforward.</p>
-          <div class="tags"><span>Appointment scheduling</span><span>Application design</span></div>
-          <details><summary>Explore project <span aria-hidden="true">+</span></summary><div class="project-details"><h4>The idea</h4><p>Apply software development concepts to a familiar real-world problem: organizing dental appointments.</p><h4>Learning focus</h4><p>Translating user needs into application screens and a clear scheduling workflow.</p></div></details>
-        </article>
-        <article class="project-card" data-category="application">
-          <div class="project-top"><span class="project-number">04</span><span class="project-type">Java application</span></div>
-          <h3>Calcu-Math</h3><p>A scientific calculator project that helped turn programming fundamentals into a working application.</p>
-          <div class="tags"><span>Java</span><span>Programming fundamentals</span></div>
-          <details><summary>Explore project <span aria-hidden="true">+</span></summary><div class="project-details"><h4>The idea</h4><p>Build a calculator that supports scientific calculations through a simple interface.</p><h4>Learning focus</h4><p>Working with Java, handling user input, and connecting mathematical operations to application behavior.</p></div></details>
-        </article>
-      </div>
-    </section>
+      </section>
 
-    <section id="learning" class="section" aria-labelledby="learning-title">
-      <div class="section-heading"><p class="eyebrow">03 / Always a student</p><h2 id="learning-title">My learning toolkit.</h2><p>Technologies and concepts I’m practicing—not a list of things I’ve mastered.</p></div>
-      <div class="learning-grid"><article><span class="learning-index">A /</span><h3>Building for the web</h3><p>Creating interfaces and connecting them to application logic.</p><div class="tags"><span>HTML &amp; CSS</span><span>JavaScript</span><span>React / Vite</span><span>Node.js / Express</span></div></article><article><span class="learning-index">B /</span><h3>Data &amp; development</h3><p>Organizing information and solving problems through code.</p><div class="tags"><span>MongoDB</span><span>MySQL</span><span>Java</span><span>Python</span><span>Git &amp; GitHub</span></div></article><article><span class="learning-index">C /</span><h3>Systems &amp; security</h3><p>Understanding the infrastructure and safeguards behind applications.</p><div class="tags"><span>Networking</span><span>Cloud computing</span><span>Access control</span><span>Secure development</span></div></article></div>
-    </section>
+      <section class="main-section">
+        <h2>RELEVANT EXPERIENCE</h2>
+        <article class="entry">
+          <h3>VIRTUAL ADMIN ASSISTANT — VOLUNTEER</h3>
+          <p class="meta"><strong>Local Community Group</strong> | Part-time / Volunteer</p>
+          <ul>
+            <li>Managed email inquiries and organized digital records.</li>
+            <li>Maintained Google Calendar schedules for events and appointments.</li>
+            <li>Prepared professional correspondence and reports using Google Workspace.</li>
+            <li>Used Monday.com to organize tasks, activities, and deadlines.</li>
+            <li>Handled confidential information with professionalism and discretion.</li>
+          </ul>
+        </article>
+      </section>
 
-    <section class="contact-section" aria-labelledby="contact-title"><div><p class="eyebrow">04 / Keep in touch</p><h2 id="contact-title">More to learn.<br>More to build.</h2><p>Follow my projects and experiments on GitHub.</p></div><a class="button primary" href="https://github.com/pjmr" target="_blank" rel="noopener noreferrer">Visit my GitHub <span aria-hidden="true">↗</span></a></section>
+      <section class="main-section projects">
+        <h2>PROJECTS</h2>
+
+        <article class="project">
+          <h3>BLOCKCERT SECURE</h3>
+          <p class="meta"><strong>Capstone Project</strong> | 2026</p>
+          <p class="stack">React | Vite | Node.js | Express | MongoDB | Blockchain | JWT | Git</p>
+          <p>
+            A blockchain-based secure document verification and certificate management system designed
+            to support document submission, issuer review, credential verification, audit logging, and
+            tamper detection through cryptographic hashes.
+          </p>
+          <ul>
+            <li>Developed role-based workflows for administrators, issuers, document owners, and external verifiers.</li>
+            <li>Implemented document hashing, verification records, audit trails, and secure upload validation.</li>
+            <li>Integrated blockchain-backed integrity records and AI-assisted document review features.</li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <h3>OPENPC UNITONE</h3>
+          <p class="meta"><strong>Computer Monitoring &amp; Management System</strong> | 2025</p>
+          <p class="stack">MongoDB | Express | React | Node.js | REST API | Git</p>
+          <p>
+            A web-based laboratory computer monitoring and management system used to organize computer
+            units, maintenance records, technician reports, and equipment status.
+          </p>
+          <ul>
+            <li>Built role-based interfaces for administrators, auditors, and technicians.</li>
+            <li>Implemented authentication, reporting workflows, inventory monitoring, and REST API integration.</li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <h3>VIDAL QUEUE-TEETH</h3>
+          <p class="meta"><strong>Dental Appointment Mobile Application</strong> | 2023 – 2024</p>
+          <p class="stack">Android Studio | Java</p>
+          <p>
+            A client-based mobile application for booking and tracking dental appointments, helping
+            reduce scheduling conflicts, missed appointments, and manual record errors.
+          </p>
+        </article>
+
+        <article class="project">
+          <h3>CALCU-MATH</h3>
+          <p class="meta"><strong>Scientific Calculator Project</strong> | 2022 – 2023</p>
+          <p class="stack">Java Swing | NetBeans IDE</p>
+          <p>
+            A desktop calculator application combining standard arithmetic and scientific functions
+            in a simple graphical interface.
+          </p>
+        </article>
+      </section>
+    </section>
   </main>
-  <footer class="container footer"><p>© <span id="year">2026</span> Paul Justine Rimando</p><p>Built with curiosity &amp; a little code.</p><a href="#home">Back to top ↑</a></footer>
+
+  <!-- PAGE 2: PROJECT PORTFOLIO -->
+  <section class="portfolio-page">
+    <header class="portfolio-header">
+      <h1>PAUL JUSTINE T. RIMANDO</h1>
+      <p>INFORMATION TECHNOLOGY STUDENT</p>
+    </header>
+
+    <div class="portfolio-body">
+      <article class="portfolio-project">
+        <div class="portfolio-copy">
+          <h2>BLOCKCERT SECURE</h2>
+          <p class="meta">Capstone Project | 2026</p>
+          <p class="stack">React | Vite | Node.js | Express | MongoDB | Blockchain</p>
+          <p>
+            Secure academic credential verification and certificate management with document hashing,
+            verification workflows, audit trails, and blockchain-backed integrity records.
+          </p>
+        </div>
+        <div class="shots three">
+          <figure class="shot">
+            <img src="images/blockcert-1.png" alt="BlockCert Secure screenshot 1"
+                 onerror="this.remove();this.parentElement.classList.add('missing')">
+            <figcaption>Add BlockCert screenshot</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="images/blockcert-2.png" alt="BlockCert Secure screenshot 2"
+                 onerror="this.remove();this.parentElement.classList.add('missing')">
+            <figcaption>Add BlockCert screenshot</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="images/blockcert-3.png" alt="BlockCert Secure screenshot 3"
+                 onerror="this.remove();this.parentElement.classList.add('missing')">
+            <figcaption>Add BlockCert screenshot</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="portfolio-project">
+        <div class="portfolio-copy">
+          <h2>OPENPC UNITONE</h2>
+          <p class="meta">Web-Based System | 2025</p>
+          <p class="stack">MongoDB | Express | React | Node.js</p>
+          <p>
+            Computer monitoring, inventory, maintenance, reporting, and unit-status management for
+            computer laboratory environments.
+          </p>
+        </div>
+        <div class="shots three">
+          <figure class="shot">
+            <img src="images/openpc-1.png" alt="OpenPC UnitOne screenshot 1"
+                 onerror="this.remove();this.parentElement.classList.add('missing')">
+            <figcaption>Add OpenPC screenshot</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="images/openpc-2.png" alt="OpenPC UnitOne screenshot 2"
+                 onerror="this.remove();this.parentElement.classList.add('missing')">
+            <figcaption>Add OpenPC screenshot</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="images/openpc-3.png" alt="OpenPC UnitOne screenshot 3"
+                 onerror="this.remove();this.parentElement.classList.add('missing')">
+            <figcaption>Add OpenPC screenshot</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="portfolio-project">
+        <div class="portfolio-copy">
+          <h2>VIDAL QUEUE-TEETH</h2>
+          <p class="meta">Dental Appointment Mobile App | 2023 – 2024</p>
+          <p class="stack">Android Studio | Java</p>
+          <p>
+            Mobile appointment scheduling designed to make dental booking and appointment tracking
+            more organized and less dependent on manual records.
+          </p>
+        </div>
+        <div class="shots three">
+          <figure class="shot">
+            <img src="images/vidal-1.png" alt="Vidal Queue-Teeth screenshot 1"
+                 onerror="this.remove();this.parentElement.classList.add('missing')">
+            <figcaption>Add Vidal screenshot</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="images/vidal-2.png" alt="Vidal Queue-Teeth screenshot 2"
+                 onerror="this.remove();this.parentElement.classList.add('missing')">
+            <figcaption>Add Vidal screenshot</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="images/vidal-3.png" alt="Vidal Queue-Teeth screenshot 3"
+                 onerror="this.remove();this.parentElement.classList.add('missing')">
+            <figcaption>Add Vidal screenshot</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="portfolio-project">
+        <div class="portfolio-copy">
+          <h2>CALCU-MATH</h2>
+          <p class="meta">Scientific Calculator | 2022 – 2023</p>
+          <p class="stack">Java Swing | NetBeans IDE</p>
+          <p>
+            Desktop scientific calculator created to apply Java programming fundamentals through a
+            functional graphical interface.
+          </p>
+        </div>
+        <div class="shots three">
+          <figure class="shot">
+            <img src="images/calcumath-1.png" alt="Calcu-Math screenshot 1"
+                 onerror="this.remove();this.parentElement.classList.add('missing')">
+            <figcaption>Add Calcu-Math screenshot</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="images/calcumath-2.png" alt="Calcu-Math screenshot 2"
+                 onerror="this.remove();this.parentElement.classList.add('missing')">
+            <figcaption>Add Calcu-Math screenshot</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="images/calcumath-3.png" alt="Calcu-Math screenshot 3"
+                 onerror="this.remove();this.parentElement.classList.add('missing')">
+            <figcaption>Add Calcu-Math screenshot</figcaption>
+          </figure>
+        </div>
+      </article>
+    </div>
+  </section>
 </body>
 </html>
