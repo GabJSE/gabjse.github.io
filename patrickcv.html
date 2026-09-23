@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,58 +11,69 @@
 
     <!-- Google Font -->
     <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap">
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/patrickcv.css">
+    <link rel="stylesheet" href="style/patrickcv.css">
 
-    <title>Patrick Cruz | Portfolio</title>
+    <title>Patrick Cruz | IT Portfolio</title>
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+    <!-- ==================================================
+         HEADER / NAVIGATION
+    =================================================== -->
+
     <header>
-        <a href="#home" class="logo">Patrick</a>
+
+        <a href="#home" class="logo">Patrick.</a>
 
         <nav>
             <a href="#home" class="active">Home</a>
-            <a href="#skills">Skills</a>
+            <a href="#profile">Profile</a>
             <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
-            <a href="#contact">Contacts</a>
+            <a href="#contact">Contact</a>
         </nav>
+
     </header>
 
 
-    <!-- ================= HOME ================= -->
+    <!-- ==================================================
+         HOME
+    =================================================== -->
+
     <section class="home" id="home">
 
         <div class="home-pfp">
-            <img src="Images/filler.png" alt="Picture of Patrick Cruz">
+
+            <!-- CHANGE THIS TO YOUR ACTUAL PHOTO -->
+            <img src="Images/filler.png"
+                 alt="Patrick Nathan B. Cruz">
+
         </div>
+
 
         <div class="home-content">
 
-            <p class="intro">Hello, I'm</p>
-
-            <h1>Patrick <span>Cruz</span></h1>
-
-            <h3>Cybersecurity <span>Student</span></h3>
-
-            <p>
-                I am a fourth-year Information Technology student with a strong
-                interest in cybersecurity, backend development, web development,
-                and secure application design.
+            <p class="greeting">
+                Hello, I'm
             </p>
 
+            <h1>
+                Patrick <span>Cruz</span>
+            </h1>
+
+            <h3>
+                Information Technology
+            </h3>
+
             <p>
-                I enjoy building practical systems, learning how technologies
-                work behind the scenes, and improving the security and
-                reliability of applications.
+                Computer Security Student
             </p>
 
-            <div class="social-icns">
+            <div class="social-icons">
 
                 <a href="https://www.linkedin.com/in/cruz-patrick0921/"
                    target="_blank"
@@ -75,72 +87,164 @@
                     <i class="fa-brands fa-github"></i>
                 </a>
 
-                <a href="#contact"
-                   aria-label="Contact">
+                <a href="mailto:patrick.cruz143cm@gmail.com"
+                   aria-label="Email">
                     <i class="fa-solid fa-envelope"></i>
                 </a>
 
             </div>
 
-            <a href="#contact" class="btn">Contact Me</a>
+            <a href="#profile" class="btn">
+                View My CV
+            </a>
 
         </div>
 
     </section>
 
 
-    <!-- ================= SKILLS ================= -->
-    <section class="section" id="skills">
+    <!-- ==================================================
+         PROFILE SUMMARY
+    =================================================== -->
+
+    <section class="section profile-section" id="profile">
 
         <div class="section-title">
-            <p>What I Work With</p>
-            <h2>My <span>Skills</span></h2>
+
+            <p>Get to Know Me</p>
+
+            <h2>
+                Profile <span>Summary</span>
+            </h2>
+
         </div>
 
-        <div class="skills-container">
 
-            <!-- Programming -->
-            <div class="skill-card">
+        <div class="profile-container">
 
-                <i class="fa-solid fa-code"></i>
+            <div class="profile-icon">
+                <i class="fa-solid fa-user"></i>
+            </div>
 
-                <h3>Programming</h3>
+            <div class="profile-text">
 
                 <p>
-                    Comfortable with programming fundamentals and
-                    object-oriented programming concepts.
+                    I pride myself in my critical and logical thinking.
+                    I see things the way they are and how they are supposed
+                    to be handled.
                 </p>
 
-                <div class="skill-list">
-                    <span>Python</span>
-                    <span>Java</span>
-                    <span>Kotlin</span>
-                    <span>JavaScript</span>
-                    <span>PHP</span>
+                <p>
+                    I am a future-oriented person, mostly focusing on the
+                    effects, consequences, or beneficial returns of my actions.
+                </p>
+
+                <p>
+                    In collaborative projects, I try to get along and motivate
+                    my team members. I will do the job asked in the most
+                    efficient way I know.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         EDUCATION
+    =================================================== -->
+
+    <section class="section" id="education">
+
+        <div class="section-title">
+
+            <p>My Academic Background</p>
+
+            <h2>
+                <span>Education</span>
+            </h2>
+
+        </div>
+
+
+        <div class="education-container">
+
+            <div class="timeline-card">
+
+                <div class="timeline-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+
+                <div class="timeline-content">
+
+                    <span class="date">
+                        2023 - Present
+                    </span>
+
+                    <h3>
+                        PHINMA University of Pangasinan
+                    </h3>
+
+                    <h4>
+                        Bachelor of Science in Information Technology
+                    </h4>
+
+                    <p>
+                        Major in Computer Security
+                    </p>
+
+                    <div class="coursework">
+
+                        <h5>Relevant Coursework</h5>
+
+                        <span>Computer Forensics</span>
+                        <span>Ethical Hacking</span>
+
+                    </div>
+
                 </div>
 
             </div>
 
+        </div>
 
-            <!-- Web Development -->
+    </section>
+
+
+    <!-- ==================================================
+         TECHNICAL SKILLS
+    =================================================== -->
+
+    <section class="section skills-section" id="skills">
+
+        <div class="section-title">
+
+            <p>What I Know</p>
+
+            <h2>
+                Technical <span>Skills</span>
+            </h2>
+
+        </div>
+
+
+        <div class="skills-container">
+
+            <!-- Java -->
             <div class="skill-card">
 
-                <i class="fa-solid fa-globe"></i>
+                <i class="fa-brands fa-java"></i>
 
-                <h3>Web Development</h3>
+                <h3>
+                    Java Programming
+                </h3>
 
                 <p>
-                    Experience building web applications and working
-                    with both frontend and backend technologies.
+                    Programming fundamentals and application development
+                    using Java.
                 </p>
-
-                <div class="skill-list">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>Node.js</span>
-                    <span>Express</span>
-                </div>
 
             </div>
 
@@ -150,41 +254,130 @@
 
                 <i class="fa-solid fa-shield-halved"></i>
 
-                <h3>Cybersecurity</h3>
+                <h3>
+                    Computer Security
+                </h3>
 
                 <p>
-                    Interested in application security, authentication,
-                    vulnerability assessment, and secure development.
+                    Fundamental concepts involving cybersecurity,
+                    ethical hacking, and information security.
                 </p>
 
-                <div class="skill-list">
-                    <span>OWASP</span>
-                    <span>OpenVAS</span>
-                    <span>JWT</span>
-                    <span>Authentication</span>
-                    <span>Linux</span>
+            </div>
+
+
+            <!-- Networking -->
+            <div class="skill-card">
+
+                <i class="fa-solid fa-network-wired"></i>
+
+                <h3>
+                    Basic Networking
+                </h3>
+
+                <p>
+                    Fundamental networking concepts and network
+                    configuration.
+                </p>
+
+            </div>
+
+
+            <!-- Web -->
+            <div class="skill-card">
+
+                <i class="fa-solid fa-globe"></i>
+
+                <h3>
+                    Web Development
+                </h3>
+
+                <p>
+                    Development of websites and web applications.
+                </p>
+
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
                 </div>
 
             </div>
 
 
-            <!-- Databases -->
+            <!-- Database -->
             <div class="skill-card">
 
                 <i class="fa-solid fa-database"></i>
 
-                <h3>Databases</h3>
+                <h3>
+                    Database Management
+                </h3>
 
                 <p>
-                    Experience designing and connecting applications
-                    with relational and NoSQL databases.
+                    Experience working with relational and NoSQL databases.
                 </p>
 
-                <div class="skill-list">
+                <div class="tags">
                     <span>MySQL</span>
+                    <span>phpMyAdmin</span>
                     <span>MongoDB</span>
-                    <span>MongoDB Atlas</span>
-                    <span>SQL</span>
+                </div>
+
+            </div>
+
+
+            <!-- Python -->
+            <div class="skill-card">
+
+                <i class="fa-brands fa-python"></i>
+
+                <h3>
+                    Python Programming
+                </h3>
+
+                <p>
+                    Python programming for software development and
+                    AI/ML-related projects.
+                </p>
+
+            </div>
+
+
+            <!-- AI -->
+            <div class="skill-card">
+
+                <i class="fa-solid fa-brain"></i>
+
+                <h3>
+                    AI / ML Development
+                </h3>
+
+                <p>
+                    Experience working with artificial intelligence and
+                    machine learning concepts through academic projects.
+                </p>
+
+            </div>
+
+
+            <!-- Backend -->
+            <div class="skill-card">
+
+                <i class="fa-solid fa-server"></i>
+
+                <h3>
+                    Backend Technologies
+                </h3>
+
+                <p>
+                    Development of backend systems and REST APIs.
+                </p>
+
+                <div class="tags">
+                    <span>Node.js</span>
+                    <span>Express.js</span>
+                    <span>REST APIs</span>
                 </div>
 
             </div>
@@ -194,60 +387,54 @@
     </section>
 
 
-    <!-- ================= EDUCATION ================= -->
-    <section class="section education-section" id="education">
+    <!-- ==================================================
+         WORK TOOLS
+    =================================================== -->
+
+    <section class="section tools-section">
 
         <div class="section-title">
-            <p>My Academic Background</p>
-            <h2><span>Education</span></h2>
+
+            <p>Development Environment</p>
+
+            <h2>
+                Work <span>Tools</span>
+            </h2>
+
         </div>
 
-        <div class="education-container">
 
-            <div class="education-card">
+        <div class="tools-container">
 
-                <div class="education-icon">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                </div>
+            <div class="tool-card">
 
-                <div class="education-content">
+                <i class="fa-solid fa-code"></i>
 
-                    <span class="education-date">2022 - Present</span>
-
-                    <h3>Bachelor of Science in Information Technology</h3>
-
-                    <h4>Major / Specialization: Cybersecurity</h4>
-
-                    <p>
-                        Currently completing my degree in Information Technology
-                        with a focus on cybersecurity, software development,
-                        databases, networking, and information assurance.
-                    </p>
-
-                </div>
+                <h3>
+                    Visual Studio Code
+                </h3>
 
             </div>
 
 
-            <div class="education-card">
+            <div class="tool-card">
 
-                <div class="education-icon">
-                    <i class="fa-solid fa-laptop-code"></i>
-                </div>
+                <i class="fa-brands fa-linux"></i>
 
-                <div class="education-content">
+                <h3>
+                    Kali Linux
+                </h3>
 
-                    <span class="education-date">Academic Projects</span>
+            </div>
 
-                    <h3>Hands-on IT Development</h3>
 
-                    <p>
-                        Developed academic projects involving web development,
-                        mobile applications, databases, backend systems,
-                        cybersecurity, and AI-assisted applications.
-                    </p>
+            <div class="tool-card">
 
-                </div>
+                <i class="fa-solid fa-network-wired"></i>
+
+                <h3>
+                    Cisco Packet Tracer
+                </h3>
 
             </div>
 
@@ -256,101 +443,353 @@
     </section>
 
 
-    <!-- ================= PROJECTS ================= -->
-    <section class="section" id="projects">
+    <!-- ==================================================
+         CORE WORK SKILLS
+    =================================================== -->
+
+    <section class="section core-section">
 
         <div class="section-title">
-            <p>Things I've Worked On</p>
-            <h2>My <span>Projects</span></h2>
+
+            <p>How I Work</p>
+
+            <h2>
+                Core Work <span>Skills</span>
+            </h2>
+
         </div>
+
+
+        <div class="core-container">
+
+            <div class="core-card">
+                <i class="fa-solid fa-lightbulb"></i>
+                <h3>Creativity</h3>
+            </div>
+
+            <div class="core-card">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <h3>Attention to Detail</h3>
+            </div>
+
+            <div class="core-card">
+                <i class="fa-solid fa-briefcase"></i>
+                <h3>Work Ethic</h3>
+            </div>
+
+            <div class="core-card">
+                <i class="fa-solid fa-clock"></i>
+                <h3>Time Management</h3>
+            </div>
+
+            <div class="core-card">
+                <i class="fa-solid fa-people-group"></i>
+                <h3>Teamwork</h3>
+            </div>
+
+            <div class="core-card">
+                <i class="fa-solid fa-brain"></i>
+                <h3>Critical Thinking</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         PROJECTS
+    =================================================== -->
+
+    <section class="section projects-section" id="projects">
+
+        <div class="section-title">
+
+            <p>Academic & Development Work</p>
+
+            <h2>
+                My <span>Projects</span>
+            </h2>
+
+        </div>
+
 
         <div class="projects-container">
 
-            <!-- HabiTrash -->
+
+            <!-- DICE GAME -->
+
             <div class="project-card">
 
-                <div class="project-icon">
-                    <i class="fa-solid fa-recycle"></i>
+                <div class="project-number">
+                    01
                 </div>
 
                 <div class="project-content">
 
-                    <h3>HabiTrash</h3>
+                    <span class="project-year">
+                        First Year · First Semester · 2023
+                    </span>
 
-                    <p>
-                        A smart waste management system designed to assist
-                        waste classification and collection monitoring.
-                        The project combines AI, IoT, backend development,
-                        and cybersecurity concepts.
-                    </p>
+                    <h3>
+                        Dice Game
+                    </h3>
 
                     <div class="project-tech">
-                        <span>Node.js</span>
-                        <span>Express</span>
-                        <span>MongoDB</span>
-                        <span>Python</span>
-                        <span>AI</span>
-                        <span>IoT</span>
+                        Python
+                        <span>|</span>
+                        Pygame
+                        <span>|</span>
+                        Tkinter
                     </div>
+
+                    <p>
+                        My first project featuring a basic dice game where
+                        a broad selection of dice and dice designs can be
+                        seen and spun.
+                    </p>
 
                 </div>
 
             </div>
 
 
-            <!-- TaskConnect -->
+            <!-- TURBOTYPER -->
+
             <div class="project-card">
 
-                <div class="project-icon">
-                    <i class="fa-solid fa-handshake"></i>
+                <div class="project-number">
+                    02
                 </div>
 
                 <div class="project-content">
 
-                    <h3>TaskConnect</h3>
+                    <span class="project-year">
+                        First Year · Second Semester · 2024
+                    </span>
 
-                    <p>
-                        A mobile-based task hiring application created
-                        as an academic project. The system connects users
-                        who need small tasks completed with people willing
-                        to perform them.
-                    </p>
+                    <h3>
+                        TurboTyper
+                    </h3>
 
                     <div class="project-tech">
-                        <span>Android</span>
-                        <span>Kotlin</span>
-                        <span>PHP</span>
-                        <span>MySQL</span>
-                        <span>REST API</span>
+                        Java Swing
+                        <span>|</span>
+                        GUI
                     </div>
+
+                    <p>
+                        A fast timer-based game that tests hand mobility
+                        and keyboard mastery by presenting various words
+                        to type within a time limit. The difficulty of the
+                        words and the amount of time are based on the
+                        selected difficulty level.
+                    </p>
 
                 </div>
 
             </div>
 
 
-            <!-- Cybersecurity -->
+            <!-- BYTEBUDDY -->
+
             <div class="project-card">
 
-                <div class="project-icon">
-                    <i class="fa-solid fa-lock"></i>
+                <div class="project-number">
+                    03
                 </div>
 
                 <div class="project-content">
 
-                    <h3>Cybersecurity Projects</h3>
+                    <span class="project-year">
+                        First Year · Second Semester · 2024
+                    </span>
 
-                    <p>
-                        Academic exercises involving vulnerability assessment,
-                        security testing, authentication, information assurance,
-                        and secure application development.
-                    </p>
+                    <h3>
+                        ByteBuddy
+                    </h3>
 
                     <div class="project-tech">
-                        <span>Kali Linux</span>
-                        <span>OpenVAS</span>
-                        <span>OWASP</span>
-                        <span>Security Testing</span>
+                        HTML
+                        <span>|</span>
+                        CSS
+                        <span>|</span>
+                        JavaScript
+                    </div>
+
+                    <p>
+                        A web-based platform designed to bridge the
+                        communication gap between users and technical
+                        support administrators. It provides a user-friendly
+                        interface for submitting detailed support tickets
+                        and scheduling appointments with administrators,
+                        fostering a more efficient and transparent
+                        resolution process.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- FIND ME -->
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    04
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-year">
+                        Second Year · Second Semester · 2024
+                    </span>
+
+                    <h3>
+                        Find Me
+                    </h3>
+
+                    <div class="project-tech">
+                        Unity
+                    </div>
+
+                    <p>
+                        A 3D horror mobile game made with UNITY Engine
+                        that immerses players in a tense and atmospheric
+                        maze environment.
+                    </p>
+
+                    <p>
+                        The objective is to navigate through the maze,
+                        avoiding lurking dangers while collecting letters
+                        to form specific words. The game combines strategic
+                        gameplay with elements of suspense and horror.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- TASKCONNECT -->
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    05
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-year">
+                        Second Year · Second Semester · 2025
+                    </span>
+
+                    <h3>
+                        TaskConnect
+                    </h3>
+
+                    <div class="project-tech">
+                        Kotlin
+                        <span>|</span>
+                        Android Studio
+                        <span>|</span>
+                        PHP
+                    </div>
+
+                    <p>
+                        A mobile-based application that features a quick,
+                        small-scale task-based hiring system.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- WORKCONNECT -->
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    06
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-year">
+                        Third Year · First Semester · 2025
+                    </span>
+
+                    <h3>
+                        WorkConnect
+                    </h3>
+
+                    <div class="project-tech">
+                        Node.js
+                        <span>|</span>
+                        Express.js
+                        <span>|</span>
+                        MongoDB
+                    </div>
+
+                    <p>
+                        A web-based job finder site that focuses on
+                        small-to-mid scale companies looking for employees.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- HABITRASH -->
+
+            <div class="project-card featured-project">
+
+                <div class="project-number">
+                    07
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-year">
+                        Capstone Project · 2025 - Present
+                    </span>
+
+                    <h3>
+                        HabiTrash: A Smart Waste Management System
+                        with AI and IoT Monitoring
+                    </h3>
+
+                    <div class="project-tech">
+                        React.js
+                        <span>|</span>
+                        Node.js
+                        <span>|</span>
+                        Python
+                        <span>|</span>
+                        TensorFlow
+                        <span>|</span>
+                        MongoDB
+                        <span>|</span>
+                        ESP32
+                        <span>|</span>
+                        Linux OS
+                    </div>
+
+                    <p>
+                        Developed a smart waste management system that
+                        integrates AI-based waste classification and
+                        IoT-enabled smart bin monitoring to improve waste
+                        segregation, collection monitoring, and operational
+                        efficiency.
+                    </p>
+
+                    <div class="featured-label">
+                        <i class="fa-solid fa-star"></i>
+                        Capstone Project
                     </div>
 
                 </div>
@@ -362,85 +801,134 @@
     </section>
 
 
-    <!-- ================= CONTACT ================= -->
+    <!-- ==================================================
+         CONTACT
+    =================================================== -->
+
     <section class="section contact-section" id="contact">
 
         <div class="section-title">
+
             <p>Let's Connect</p>
-            <h2>Contact <span>Me</span></h2>
+
+            <h2>
+                Contact <span>Me</span>
+            </h2>
+
         </div>
+
 
         <div class="contact-container">
 
-            <div class="contact-info">
 
-                <h3>Get In Touch</h3>
+            <!-- Phone -->
+
+            <a href="tel:+639814515364" class="contact-card">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <h3>
+                    Phone
+                </h3>
 
                 <p>
-                    Whether you would like to discuss a project,
-                    collaboration, internship opportunity, or simply
-                    connect, feel free to reach out.
+                    +63981-451-5364
                 </p>
 
-                <div class="contact-item">
-                    <i class="fa-solid fa-envelope"></i>
-                    <div>
-                        <h4>Email</h4>
-                        <p>your-email@example.com</p>
-                    </div>
-                </div>
+            </a>
 
-                <div class="contact-item">
-                    <i class="fa-brands fa-github"></i>
-                    <div>
-                        <h4>GitHub</h4>
-                        <p>github.com/Aerythox</p>
-                    </div>
-                </div>
 
-                <div class="contact-item">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <div>
-                        <h4>LinkedIn</h4>
-                        <p>linkedin.com/in/cruz-patrick0921</p>
-                    </div>
-                </div>
-
-            </div>
-
+            <!-- Location -->
 
             <div class="contact-card">
 
-                <i class="fa-solid fa-terminal"></i>
+                <i class="fa-solid fa-location-dot"></i>
 
-                <h3>Interested in working together?</h3>
+                <h3>
+                    Location
+                </h3>
 
                 <p>
-                    I'm always interested in learning, building,
-                    and working on new technology projects.
+                    Lingayen, Pangasinan
                 </p>
 
-                <a href="mailto:your-email@example.com" class="btn">
-                    Send Me an Email
-                </a>
-
             </div>
+
+
+            <!-- Email -->
+
+            <a href="mailto:patrick.cruz143cm@gmail.com"
+               class="contact-card">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <h3>
+                    Email
+                </h3>
+
+                <p>
+                    patrick.cruz143cm@gmail.com
+                </p>
+
+            </a>
+
+
+            <!-- LinkedIn -->
+
+            <a href="https://www.linkedin.com/in/cruz-patrick0921/"
+               target="_blank"
+               class="contact-card">
+
+                <i class="fa-brands fa-linkedin"></i>
+
+                <h3>
+                    LinkedIn
+                </h3>
+
+                <p>
+                    cruz-patrick0921
+                </p>
+
+            </a>
+
+
+            <!-- GitHub -->
+
+            <a href="https://github.com/Aerythox"
+               target="_blank"
+               class="contact-card">
+
+                <i class="fa-brands fa-github"></i>
+
+                <h3>
+                    GitHub
+                </h3>
+
+                <p>
+                    github.com/Aerythox
+                </p>
+
+            </a>
 
         </div>
 
     </section>
 
 
-    <!-- ================= FOOTER ================= -->
+    <!-- ==================================================
+         FOOTER
+    =================================================== -->
+
     <footer>
 
         <p>
-            © 2026 Patrick Cruz. All Rights Reserved.
+            © 2026 Patrick Nathan B. Cruz
         </p>
 
         <div class="footer-socials">
 
-            <a href="https://github.com/Aerythox" target="_blank">
+            <a href="https://github.com/Aerythox"
+               target="_blank">
                 <i class="fa-brands fa-github"></i>
             </a>
 
@@ -449,9 +937,14 @@
                 <i class="fa-brands fa-linkedin"></i>
             </a>
 
+            <a href="mailto:patrick.cruz143cm@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
         </div>
 
     </footer>
+
 
 </body>
 </html>
