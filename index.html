@@ -1,100 +1,31 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CV versions and professional information for Gabriel Jose S. Esperanza.">
-    <title>Gabriel Jose S. Esperanza | CV Directory</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --ink: #17211f;
-            --muted: #68726e;
-            --paper: #f4f5f0;
-            --line: #d8ded8;
-            --accent: #d2f25c;
-        }
-
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        html { scroll-behavior: smooth; }
-        body { background: var(--paper); color: var(--ink); font: 400 16px/1.6 "Manrope", sans-serif; }
-        a { color: inherit; text-decoration: none; }
-        .container { margin: 0 auto; max-width: 1080px; padding: 0 32px; }
-        header { border-bottom: 1px solid var(--line); }
-        nav { align-items: center; display: flex; height: 84px; justify-content: space-between; }
-        .brand { font-size: 25px; font-weight: 800; letter-spacing: -.08em; }
-        .brand span, .card-number { color: #739000; }
-        .back-link, .eyebrow, .card-number, footer { font: 500 11px "DM Mono", monospace; letter-spacing: .08em; text-transform: uppercase; }
-        .back-link { color: var(--muted); }
-        .back-link:hover, .card:hover h2 { color: #739000; }
-        main { padding: 110px 0 130px; }
-        .eyebrow { align-items: center; color: var(--muted); display: flex; gap: 12px; }
-        .rule { background: #aab5ae; height: 1px; width: 42px; }
-        h1 { font-size: clamp(3.7rem, 9vw, 8rem); letter-spacing: -.1em; line-height: .9; margin: 32px 0 26px; max-width: 800px; }
-        h1 em { color: #739000; font-style: normal; }
-        .intro { color: var(--muted); font-size: 18px; max-width: 470px; }
-        .cards { border-top: 1px solid var(--line); display: grid; gap: 18px; grid-template-columns: repeat(3, 1fr); margin-top: 85px; padding-top: 18px; }
-        .card { border-bottom: 1px solid var(--line); display: flex; flex-direction: column; min-height: 270px; padding: 24px 12px 26px 0; transition: border-color .2s, transform .2s; }
-        .card-photo { align-items: center; background: #dfe6dc; display: flex; height: 150px; justify-content: center; margin-bottom: 24px; overflow: hidden; position: relative; }
-        .card-photo span { color: #739000; font-size: 42px; font-weight: 800; letter-spacing: -.1em; }
-        .card-photo img { height: 100%; object-fit: cover; position: absolute; width: 100%; }
-        .card:hover { border-color: #739000; transform: translateY(-4px); }
-        .card-disabled { cursor: not-allowed; opacity: .62; }
-        .card-status { color: var(--muted); font: 500 10px "DM Mono", monospace; margin-top: auto; text-transform: uppercase; }
-        .card-number { margin-bottom: 45px; }
-        .card h2 { font-size: 25px; letter-spacing: -.06em; line-height: 1.1; margin-bottom: 14px; transition: color .2s; }
-        .card p { color: var(--muted); font-size: 14px; max-width: 260px; }
-        .card-arrow { color: #739000; font-size: 24px; margin-top: auto; }
-        footer { border-top: 1px solid var(--line); color: var(--muted); padding: 25px 0; }
-        @media (max-width: 700px) {
-            .container { padding-left: 20px; padding-right: 20px; }
-            nav { height: 72px; }
-            main { padding: 75px 0 90px; }
-            .cards { grid-template-columns: 1fr; margin-top: 60px; }
-            .card { min-height: 210px; }
-            .card-number { margin-bottom: 25px; }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Gabriel Esperanza's portfolio — full-stack development, accessible technology, and AI applications.">
+<title>Gabriel Esperanza | Developer Portfolio</title>
+<link rel="stylesheet" href="css/portfolio.css">
 </head>
 <body>
-    <header>
-        <nav class="container" aria-label="Main navigation">
-            <a class="brand" href="index.html" aria-label="CV directory">GE<span>.</span></a>
-        </nav>
-    </header>
-
-    <main class="container">
-        <p class="eyebrow">CV directory <span class="rule"></span> Team profiles</p>
-        <h1>Choose a <em>CV</em><br>to explore.</h1>
-        <p class="intro">Select a name below to open the available curriculum vitae.</p>
-
-        <section class="cards" aria-label="CV links">
-            <a class="card" href="paulcv.html">
-                <div class="card-photo"><span aria-hidden="true">PJR</span><img src="images/paul.jpg" alt="Portrait of Paul Justine Rimando" onerror="this.style.display='none'"></div>
-                <span class="card-number">01 / CV</span>
-                <h2>Paul Justine Rimando</h2>
-                <p>Open Paul Justine Rimando’s curriculum vitae.</p>
-                <span class="card-arrow" aria-hidden="true">↗</span>
-            </a>
-            <a class="card" href="patrickcv.html">
-                <div class="card-photo"><span aria-hidden="true">PC</span><img src="images/patrick.jpg" alt="Portrait of Patrick Cruz" onerror="this.style.display='none'"></div>
-                <span class="card-number">02 / CV</span>
-                <h2>Patrick Cruz</h2>
-                <p>Open Patrick Cruz’s curriculum vitae.</p>
-                <span class="card-arrow" aria-hidden="true">↗</span>
-            </a>
-            <a class="card" href="gabcv.html">
-                <div class="card-photo"><span aria-hidden="true">GJSE</span><img src="images/gabriel.jpg" alt="Portrait of Gabriel Jose Esperanza" onerror="this.style.display='none'"></div>
-                <span class="card-number">03 / CV</span>
-                <h2>Gabriel Jose Esperanza</h2>
-                <p>Open the complete curriculum vitae.</p>
-                <span class="card-arrow" aria-hidden="true">↗</span>
-            </a>
-        </section>
-    </main>
-
-    <footer class="container">© 2026 Gabriel Jose S. Esperanza</footer>
+<a class="skip" href="#main">Skip to content</a>
+<header><nav class="wrap" aria-label="Main navigation"><a class="brand" href="#home" aria-label="Gabriel Esperanza home">ge<span>.</span></a><div class="nav-links"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></div><a class="cv" href="gabcv.html">View CV ↗</a></nav></header>
+<main id="main">
+<section class="hero wrap" id="home" aria-labelledby="intro">
+<div><p class="eyebrow">● &nbsp; Gabriel Jose S. Esperanza</p><h1 id="intro">Building useful<br>things for<br><em>real people.</em></h1><p class="intro">I'm Gabriel, a full-stack developer and IT student exploring the intersection of web development, AI, and accessible technology.</p><div class="actions"><a class="button" href="#work">Explore my work ↘</a><a href="mailto:esperanzagabrieljose@gmail.com">Get in touch ↗</a></div></div>
+<figure><div class="portrait"><img src="images/gabriel.jpg" alt="Gabriel Jose S. Esperanza" width="440" height="460" fetchpriority="high"></div><figcaption>Developer. Designer. Problem solver. <span aria-hidden="true">✳</span></figcaption></figure>
+<div class="hero-bottom"><span>Web development / AI integration / UI &amp; UX</span><a href="#work">Scroll to explore ↓</a></div>
+</section>
+<section class="section wrap" id="work" aria-labelledby="work-title">
+<div class="section-heading"><div><p class="eyebrow">01 / Selected work</p><h2 id="work-title">Ideas turned into<br><em>working products.</em></h2></div><p>A selection of projects I've helped bring to life, from accessible coding tools to full-stack web platforms.</p></div>
+<article class="project featured"><div class="art braille" aria-hidden="true"><span class="art-label">ACCESSIBLE TECHNOLOGY</span><div class="dots"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="art-title">Code beyond<br>the screen_</div><span class="art-label">BRAILLE INPUT + AI ASSISTANCE</span></div><div class="project-copy"><p class="eyebrow">01 / Full Stack Developer</p><h3>Zero Vision Coding</h3><p>An AI-enhanced Arduino Braille programming platform for blind and visually impaired programmers. A custom six-key keyboard meets a VS Code extension with voice commands, text-to-speech, and AI coding support.</p><p class="note">Presented at the 2nd Innovex 2026 International Student Conference in Indonesia.</p><ul class="tags" aria-label="Technologies"><li>Python</li><li>FastAPI</li><li>JavaScript</li><li>Arduino</li><li>Ollama</li></ul><a class="project-link" href="https://github.com/endevium/ZeroVisionCoding" target="_blank" rel="noreferrer">Explore repository ↗</a></div></article>
+<div class="project-grid">
+<article class="project"><div class="art feedback" aria-hidden="true"><span class="art-label">FEEDBACK &amp; ANALYTICS</span><div class="bars"><i></i><i></i><i></i><i></i><i></i></div><div class="art-title">Every voice.<br>A clearer picture.</div></div><div class="project-copy"><p class="eyebrow">02 / Full Stack Developer</p><h3>Student Feedback &amp;<br>Module Evaluation</h3><p>A feedback platform for the University of Pangasinan with role-based access, evaluation workflows, analytics, and AI-assisted sentiment analysis.</p><ul class="tags" aria-label="Technologies"><li>React</li><li>Django</li><li>PostgreSQL</li><li>Transformers</li></ul><a class="project-link" href="https://github.com/endevium/upang-sfme" target="_blank" rel="noreferrer">Explore repository ↗</a></div></article>
+<article class="project"><div class="art connect" aria-hidden="true"><span class="art-label">CAREERS &amp; CONNECTIONS</span><div class="rings"><i></i><i></i><i></i></div><div class="art-title">Good work starts<br>with a connection.</div></div><div class="project-copy"><p class="eyebrow">03 / Developer &amp; Project Manager</p><h3>WorkConnect</h3><p>A job-finding platform connecting job seekers and employers through authentication, job listings, search, and application management. I also coordinated team tasks and project delivery.</p><ul class="tags" aria-label="Technologies"><li>React</li><li>Node.js</li><li>Express</li><li>MongoDB</li></ul><a class="project-link" href="https://github.com/GabJSE/ITE-386-Preliminary-GPP" target="_blank" rel="noreferrer">Explore repository ↗</a></div></article>
+</div></section>
+<section class="section about" id="about" aria-labelledby="about-title"><div class="wrap about-grid"><div><p class="eyebrow">02 / A little about me</p><h2 id="about-title">Curious by nature.<br><em>Hands-on by choice.</em></h2></div><div><p class="lead">I enjoy connecting thoughtful design with the code that makes it work.</p><p>I'm studying Information Technology at PHINMA University of Pangasinan. My projects combine full-stack development, UI/UX design, and AI integration, with an interest in making technology more accessible.</p><p>Beyond software, I manage TikTok Shop operations at RJE Motor Parts &amp; Accessories Shop, working on product listings, promotions, customer concerns, and store performance.</p><div class="education"><p class="eyebrow">Education / 2023 – Present</p><h3>BS in Information Technology</h3><p>PHINMA University of Pangasinan</p></div></div></div></section>
+<section class="section wrap" aria-labelledby="skills-title"><div class="section-heading"><div><p class="eyebrow">03 / My toolkit</p><h2 id="skills-title">The tools behind<br><em>the work.</em></h2></div></div><div class="skills"><div><span class="skill-number">01</span><h3>Development</h3><p>Python · Java · JavaScript · PHP<br>React · Node.js · Django · FastAPI<br>HTML · CSS · GitHub</p></div><div><span class="skill-number">02</span><h3>Data &amp; AI</h3><p>PostgreSQL · MySQL · MongoDB · SQLite<br>PyTorch · Hugging Face Transformers<br>Prompt engineering · LLM integration</p></div><div><span class="skill-number">03</span><h3>Design &amp; beyond</h3><p>Figma · Canva · UI/UX design<br>Project management · Troubleshooting<br>PC assembly · Hardware maintenance</p></div></div></section>
+<section class="section contact" id="contact" aria-labelledby="contact-title"><div class="wrap"><p class="eyebrow">04 / Let's connect</p><h2 id="contact-title">Have something<br><em>in mind?</em></h2><p>Let's talk about a project, an opportunity, or an idea worth building.</p><a class="email" href="mailto:esperanzagabrieljose@gmail.com">esperanzagabrieljose@gmail.com ↗</a><div class="socials"><a href="https://github.com/GabJSE" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/gabesperanza" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="gabcv.html">Full CV ↗</a></div></div></section>
+</main><footer class="wrap"><span>© 2026 Gabriel Esperanza</span><a href="#home">Back to top ↑</a></footer>
 </body>
 </html>
